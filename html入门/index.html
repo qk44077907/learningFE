@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        td {
+            border: solid black 1px
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-<input type="button" value="按钮1"><br>
-<label for="male">Male</label>
-<input type="radio" name="sex" id="male"><br>
-
-<label for="female">Female</label>
-<input type="radio" name="sex" id="female"><br>
-姓名:<br>
-<input type="text" name="firstname" value="王五"><br>
-<br>
-<input type="search"><br>
-<input type="url"><br>
-<input type="reset" value="清空"><br>
-<input type="submit" value="提交">
 
 
 <div>这是一个div元素里的内容</div>
-    <p>这是一个p元素里的内容</p>
+<p>这是一个p元素里的内容</p>
 <span>这是一个span元素里的内容</span><span>这是另一个span元素里的内容</span>
+<table>
+    <thead>
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>年龄</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>小张</td>
+        <td>男</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>小李</td>
+        <td>男</td>
+        <td>20</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">总计人数：2</td>
+    </tr>
+    </tfoot>
+</table>
 <ul>
     <li>123213</li>
     <li>rret</li>
@@ -35,10 +57,71 @@
     <li>aa</li>
     <li>bb</li>
 </ol>
-行内元素:display属性默认为inline的元素 img,span,label,input,button,a<br>
-内联对象inline给它设置属性height和width是没有用的，致使它变宽变大的,它实际宽度为：内部元素的宽+2*(padding+border+margin)。
-inline对象不单独占一行。
-块元素:display属性默认为block的元素
+
+
+<form>
+    name的属性值，value的属性值分别表示这个表单发送请求时的字段名称和值<br>
+    姓名:<br>
+    <input type="text" name="firstname" value="王五"><br>
+    密码：<br>
+    <input type="password"><br>
+    <input type="button" value="按钮1"><br>
+    <label>
+        <input type="radio" name="sex" id="male">Male
+    </label>
+    <label for="female">Female</label>
+    <input type="radio" name="sex" id="female"><br>
+    <input type="checkbox" name="remember">记住密码<br>
+    <input type="reset" value="清空"><br>
+    <input type="submit" value="提交"><br>
+    其他html5新增的input可选type<br>
+    <input type="color"><br>
+    <input type="date"><br>
+    <input type="datetime"><br>
+    <input type="email"><br>
+    <input type="month"><br>
+    <input type="number"><br>
+    <input type="search"><br>
+    <input type="week"><br>
+    <input type="url"><br>
+    <input type="time"><br>
+    单选下拉<br>
+    <select name="day">
+        <option value="Friday" selected>Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select><br>
+    多选下拉<br>
+    <select name="day" multiple>
+        <option value="Friday" selected>Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select><br>
+    <textarea name="text" placeholder="点此输入多行文字"></textarea>
+    表单控件可能的属性值还有
+    <ul>
+        <li><code>accept</code></li>
+        <li><code>autocomplete</code></li>
+        <li><code>autofocus</code></li>
+        <li><code>formaction</code></li>
+        <li><code>formenctype</code></li>
+        <li><code>formmethod</code></li>
+        <li><code>formnovalidate</code></li>
+        <li><code>formtarget</code></li>
+        <li><code>max</code></li>
+        <li><code>maxlength</code></li>
+        <li><code>min</code></li>
+        <li><code>pattern</code></li>
+        <li><code>readonly</code></li>
+        <li><code>selectionDirection</code></li>
+        <li><code>step</code></li>
+    </ul>
+</form>
+
+
+<button><b>按钮字体加粗，甚至还能嵌套图片</b></button>
+<a href="#name">name</a>
+<img src="">
 </body>
 The difference between HTML and CSS
 Getting acquainted with HTML elements, tags, and attributes
