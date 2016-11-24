@@ -1,0 +1,21 @@
+h1{
+    color: red;
+}
+#test1{
+padding: 50px;
+
+}
+#test2{
+    width: 50%;
+    height: 50%;
+}
+#test3{
+    width: 1000px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#test4{
+    width: 1000px;
+   /* display: inline-block;*/
+    margin-top: 50px;
+}
