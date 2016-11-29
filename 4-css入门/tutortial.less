@@ -9,3 +9,20 @@
     color: red;
   }
 }
+//不被编译的注释，带参数混合和不带参数混合
+.boder_1(@width){
+  border: @width solid pink;
+}
+.list{
+  li{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    list-style: none;
+    text-align: center;
+    .boder_1(1px);
+  }
+}
