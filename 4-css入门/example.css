@@ -1,21 +1,45 @@
-h1{
+h1 {
     color: red;
 }
-#test1{
-padding: 50px;
 
+#test1 {
+    padding: 50px;
 }
-#test2{
+
+#test1 span {
+    color: red;
+}
+
+#test2 {
+    background-color: pink;
     width: 50%;
-    height: 50%;
+    height: 80%;
 }
-#test3{
+
+#test3 {
     width: 1000px;
     display: inline-block;
     margin-bottom: 20px;
+    line-height: 50px;
 }
-#test4{
+
+#test4 {
     width: 1000px;
-   /* display: inline-block;*/
+    /* display: inline-block;*/
     margin-top: 50px;
+}
+
+#floattest2 {
+    line-height: 60px;
+    background-color: lightblue;
+}
+
+.float {
+    float: left;
+    width: 700px;
+    font-size: 10px;
+    background-color: red;
+}
+.float.second{
+    background-color: gray;
 }
