@@ -10,11 +10,18 @@
   }
 }
 //不被编译的注释，带参数混合和不带参数混合
+@w30:28px
 .boder_1(@width){
   border: @width solid pink;
 }
+.tet(@hight30){
+  color: red;
+  background-color: gray;
+  height: @hight30;
+}
 .list{
   li{
+    .tet(50px);
     display: inline-block;
     width: 100px;
     height: 50px;
@@ -25,4 +32,8 @@
     text-align: center;
     .boder_1(1px);
   }
+  a{
+
+  }
 }
+

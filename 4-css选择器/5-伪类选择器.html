@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        h1:hover{
+            background-color: lightblue;
+        }
+        li:first-child{
+            background-color: red;
+        }
+        li:last-child{
+            background-color: green;
+        }
+        li:nth-child(2){
+
+        }
+        li:nth-last-child(3){
+
+        }
+        /*a标签的伪类遵守LVHA顺序*/
+        a:link { color: blue } /* unvisited links */
+        a:visited { color: purple } /* visited links */
+        a:hover { font-weight: bold } /* user hovers */
+        a:active { color: lime } /* active links */
+    </style>
+</head>
+<body>
+<h1>伪类选择器</h1>
+<ul>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+    <li>List 5</li>
+</ul>
+<a href="#">超链接</a>
+</body>
+</html>

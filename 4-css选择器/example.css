@@ -15,7 +15,8 @@ h1 {
     width: 50%;
     height: 80%;
 }
-
+#test1 #test2 .b
+#test1 .c.a.d.b
 #test3 {
     width: 1000px;
     display: inline-block;
@@ -26,7 +27,8 @@ h1 {
 #test4 {
     width: 1000px;
     /* display: inline-block;*/
-    margin-top: 50px;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 #floattest2 {
@@ -42,4 +44,10 @@ h1 {
 }
 .float.second{
     background-color: gray;
+}
+#test1:before{
+    content: '嘿嘿';
+}
+[name='t']{
+    background-color: red;
 }

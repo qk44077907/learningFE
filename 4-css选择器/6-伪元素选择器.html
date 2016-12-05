@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /*试试给伪元素添加背景或者改成块级元素*/
+        h1:before{
+            content: '前缀...';
+            /*display: block;
+            background-color: grey;*/
+        }
+        h1:after{
+            content: '...后缀';
+        }
+        /*文本第一个字符*/
+        h1:first-letter{
+            font-size: 60px;
+        }
+        /*第一行文本*/
+        h1:first-line{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>伪元素选择器<br>第二行文字</h1>
+</body>
+</html>

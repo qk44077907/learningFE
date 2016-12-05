@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器的组合</title>
+    <style>
+        /*直接连接选择器，代表元素需要同时满足前后的选择器*/
+        /*.list.wrapper{
+            border: 10px red solid;
+        }*/
+
+        /*用空格分开选择器，代表 前一个选择器选中元素 的 后代元素 中 后一个选择器选中的元素*/
+        /*.wrapper .inside {
+            color: red;
+        }*/
+
+        /*用逗号分开选择器，代表前后选择器分别选中的元素都生效*/
+        .wrapper,.inside{
+            border: 2px green solid;
+        }
+
+        /*等同于*/
+        /*.wrapper{
+            border: 10px red solid;
+        }
+        .inside{
+            border: 10px red solid;
+        }*/
+    </style>
+</head>
+<body>
+<div class="list wrapper">
+    list1-
+    <span class="inside">中间一段文本</span>
+    -list1
+</div>
+<div class="list">
+    list2-
+    <span class="inside">中间一段文本</span>
+    -list2
+</div>
+<div class="list">
+    list3-list3
+</div>
+</body>
+</html>
