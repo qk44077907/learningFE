@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>margin外边距</title>
-    <style></style>
+    <style>
+        .test1{
+            /*外边距合并*/
+            display: inline-block;
+            width: 600px;
+            height: 300px;
+        }
+        .test2 {
+            width: 100px;
+            height: 100px;
+            /*简写，上下左右auto的区别，百分比*/
+            margin: 0 auto;
+            margin: 10px;
+            margin: 10%;
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
-<div></div>
+<div class="test1">
+    <div class="test2"></div>
+</div>
+
 </body>
 </html>
