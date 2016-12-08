@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clear属性</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .float{
+            float: left;
+            background-color: red;
+        }
+        .block{
+            background-color: lightblue;
+            height: 30px;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+<div class="float">我是向左浮动的盒子，脱离文档流，飘啊飘，直到遇到包含我的盒子边界，或者另一个浮动元素我才会停下来。我会把一切行内元素挤开</div>
+<div class="block">我是一个block,clear:left。如果发现前面有float:left的元素，我就躲开换行。</div>
+</body>
+</html>

@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <title>选择器权重</title>
     <style>
-        table{
+        table {
             margin: auto;
             text-align: center;
             font-family: "Microsoft YaHei";
         }
-        table .head{
+
+        table .head {
             font-size: 60px;
         }
-        table .item td{
+
+        table .item td {
             width: 25%;
         }
-        table td{
+
+        table td {
             font-size: 20px;
             padding: 5px 10px;
         }
-        table input{
+
+        table input {
             height: 60px;
             width: 40px;
             font-size: 30px;
@@ -28,18 +32,66 @@
 </head>
 <body>
 <table>
-    <tr><td colspan="4" class="head">选择器权重</td></tr>
+    <tr>
+        <td colspan="4" class="head">选择器权重</td>
+    </tr>
     <tr class="item">
-    <td>是否内联？</td>
-    <td>ID选择器</td>
-    <td>class、伪类、属性选择器</td>
-    <td>元素选择器</td>
+        <td>是否内联？</td>
+        <td>ID选择器</td>
+        <td>class、伪类、属性选择器</td>
+        <td>元素选择器</td>
     </tr>
     <tr>
         <td><input type="text"></td>
         <td><input type="text"></td>
         <td><input type="text"></td>
-        <td><input type="text"></td></tr>
+        <td><input type="text"></td>
+    </tr>
 </table>
+
+
+<code>
+    &lt;div id="content"> <br>
+    &lt;div id="main-content"> <br>
+    &lt;h2>CSS简介&lt;/h2> <br>
+    &lt;p>CSS是一组格式设置规则，用于控制Web页面的外观。&lt;/p> <br>
+    &lt;div class="paragraph"> <br>
+    &lt;h2 class="first">使用CSS布局的优点&lt;/h2> <br>
+    &lt;p> <br>
+                    1、表现和内容相分离 <br>
+                    2、提高页面浏览速度 <br>
+                    3、易于维护和改版 <br>
+                    4、使用CSS布局更符合现在的W3C标准. <br>
+    &lt;/p> <br>
+    &lt;/div> <br>
+    &lt;/div> <br>
+    &lt;/div> <br>
+</code>
+
+<h3>#content div#main-content h2{
+    color:red;
+    }
+</h3>
+<h3>
+    #content #main-content h2{
+    color:blue
+    }
+</h3>
+<h3> body #content div[id="main-content"] h2{
+    color:green;
+    }
+
+</h3>
+<h3> #main-content div.paragraph h2{
+    color:orange;
+    }
+</h3>
+<h3>#main-content [class="paragraph"] h2{
+    color:yellow;
+    }
+</h3>
+<h3>div#main-content div.paragraph h2.first{
+    color:pink;
+    }</h3>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+        #t3{
+            border:5px solid red;
+            padding:10px;
+            width: 340px;
+            height: 400px
+        }
+        #t2{
+            border:5px solid green;
+            padding:10px;
+            width: 320px;
+            height: 360px
+        }
+        #t1{
+            border:5px solid black;
+            padding:10px;
+            width: 300px;
+            height: 320px;
+        }
+        [class|=child]{
+            width: 100px;
+            height: 100px;
+        }
+        .child-1{
+            background-color: lightblue;
+            position: relative;
+            /*bottom: 10px;*/
+            /*top: 10px;*/
+            /*left: 10px;*/
+            /*right: 10px;*/
+        }
+        .child-2{
+            background-color: pink;
+            position: relative;
+        }
+        .child-3{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<h3>position是怎么定位的</h3>
+<div id="t3">
+    红色：太公元素。。
+    <div id="t2">
+        绿色：爷元素。。
+        <div id="t1">
+            黑色：父元素
+            <div class="child-1">div1</div>
+            <div class="child-2">div2</div>
+            <div class="child-3">div3</div>
+        </div>
+    </div>
+</div>
+<h5>z-index</h5>
+</body>
+</html>

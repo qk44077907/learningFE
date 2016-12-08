@@ -18,30 +18,10 @@
     <div id="test2" class="b">一个子元素，width是百分比，height是百分比（会生效吗？）</div>
 </div>
 结论：height设置百分比只有在父元素height不会auto时才有用
-<h3>position是怎么定位的</h3>
-<div style=" border:1px solid Red; padding:10px; width: 340px; height: 400px">
-    红色：太公
-    <div style="border:1px solid Green; padding:10px; width: 320px; height: 360px">
-        绿色：爷爷
-        <div style="border:1px solid Yellow; padding:10px; width: 300px; height: 320px;">
-            黄色：老爸
-            <div style="width: 100px; height: 100px;background-color: red">
-                div1
-            </div>
-            <div style="width: 100px; height: 100px;background-color: green; position:relative;">
-                div2
-            </div>
-            <div style="width: 100px; height: 100px;background-color: pink; position:relative;">
-                div3
-            </div>
-        </div>
-    </div>
-</div>
+
+
 <h3>浮动</h3>
-<span style="width:900px;background-color: darkorange">我是一个普通的span元素，我本来在左边的，谁叫我是行内元素，我被挤开了</span><div class="float">我是向左浮动的盒子，脱离文档流，飘啊飘，直到遇到包含我的盒子边界，或者另一个浮动元素我才会停下来。我会把一切行内元素挤开</div>
-<br>
-<br>
-<br>
+
 <div class="float second">我也是向左浮动的盒子，脱离文档流，飘啊飘，直到遇到包含我的盒子边界，或者另一个浮动元素我才会停下来.我会把行内元素挤开</div><div id="floattest2">block元素来了，前面有什么？什么都没啊！</div>
 <br>
 <h5>用浮动元素的坑：如果一排里有个浮动的兄弟比别人高，等到换行的时候，文档流不知道还有个高个兄弟会挡道！（去掉上面的br标签试试）</h5>
