@@ -12,12 +12,17 @@
 
 
 /**
- * 创建一个对象
+ * 创建一个对象，对象的key值是一个字符串常量，存取对应key下的value使用‘.’，使用变量来传key值时使用[]
  */
 var a={};
 a.x='1';
 a.y=2;
 a.z=true
+console.log(a.x);
+var prop='x';
+a[prop]='123';
+console.log(a.x);
+
 
 //等同于
 a={
@@ -27,9 +32,9 @@ a={
 };
 console.log(a.x);
 /**
- * 数组
+ * 数组，一个有序的数据集合
  */
-var b;
+var b=[];
 b[0]='1';
 b[1]=2;
 b[3]=false
