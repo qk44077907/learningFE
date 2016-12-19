@@ -2,8 +2,7 @@
 
 
 /**
- * 3.number
+ * 4.boolean类型
  */
-var a=2;
-var b=1.5;
-var c=NaN
+var a=true;
+var b=false;

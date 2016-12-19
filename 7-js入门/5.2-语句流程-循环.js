@@ -13,7 +13,7 @@ do{
     j++;
     console.log('第'+j+'次');
 }
-while (j<=3)
+while (j<=3);
 
 var k=0;
 while (k<=3){
@@ -28,4 +28,4 @@ var obj={
     x:1,
     y:'js',
     z:true
-}
+};

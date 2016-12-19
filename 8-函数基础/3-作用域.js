@@ -13,4 +13,4 @@ function fn() {
     }
 }
 
-bar();
+bar();//报错，当前作用域中没有bar变量
