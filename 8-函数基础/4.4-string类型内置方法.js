@@ -6,13 +6,13 @@ console.log(
     a.length
 );
 console.log(
+    a.indexOf('S')
+);
+console.log(
     a.charAt(2)
 );
 console.log(
     a.charCodeAt(2)
-);
-console.log(
-    a.indexOf('S')
 );
 console.log(
     a.toLowerCase()
