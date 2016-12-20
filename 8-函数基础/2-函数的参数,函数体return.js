@@ -17,13 +17,22 @@ function test1(a,b,c,d) {
 /**
  * JS里对函数传入的实参的类型与个数没有限制
  */
-
+//代码
 
 
 /**
  * 函数体内可以使用return结合条件判断语句起到提前结束语句
+ */
+//代码
+
+
+/**
  * 另外return结合赋值，可将值返回给外界
  */
 function test2() {
+    console.log('函数test2被调用！');
     return 10
 }
+var a={};
+a.test2=test2();  //注意区分a.test2=test2
+console.log(a.test2);

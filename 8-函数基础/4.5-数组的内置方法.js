@@ -71,7 +71,7 @@ var c=a.map(function (value) {
 });
 console.log(c);
 
-
+//逻辑操作符的数组版，返回一个boolean值
 var isAllString = a.every(function (value) {
     return typeof value === 'string'
 });
@@ -81,22 +81,3 @@ var isSomeString = a.some(function (value) {
     return typeof value === 'string'
 });
 console.log(isSomeString);
-
-
-
-/*
- console.log(
- a.toUpperCase()
- );
- console.log(
- a.trim()
- );
- console.log(
- a.concat('! How are you')
- );
- console.log(
- a.slice(2) //截取字符串，推荐使用slice(),其他两种方法为substr()和substring()，大同小异
- );
- console.log(
- a.split(',')
- );*/

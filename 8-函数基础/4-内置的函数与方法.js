@@ -1,3 +1,3 @@
 /**
- * Created by Administrator on 2016/12/18.
+ * JS中有许多已经定义好的函数与方法
  */
