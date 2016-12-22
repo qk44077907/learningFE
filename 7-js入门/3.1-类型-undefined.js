@@ -4,5 +4,4 @@
 /**
  * 1.undefined，变量已经声明但没有赋值
  */
-var b;
-var a=undefined;
+var a;//等同于 var b=undefined
