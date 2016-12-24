@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM事件流</title>
+    <style>
+        div{
+            padding: 20px;
+        }
+        #out1{
+            background-color: orange;
+            width: 800px;
+            height: 800px;
+        }
+        #out2{
+            background-color: lightblue;
+            width: 700px;
+            height: 700px;
+        }
+        #out3{
+            background-color: pink;
+            width: 600px;
+            height: 600px;
+        }
+        #out4{
+            background-color: lawngreen;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<div id="out1">
+    out1
+    <div id="out2">
+        out2
+        <div id="out3">
+            out3
+            <div id="out4">out4</div>
+        </div>
+    </div>
+</div>
+<script>
+    function out1handler() {
+        alert('out1')
+    }
+    function out2handler() {
+        alert('out2')
+    }
+    function out3handler() {
+        alert('out3')
+    }
+    function out4handler() {
+        alert('out4')
+    }
+    document.getElementById('out1').addEventListener('click',out1handler);
+    document.getElementById('out2').addEventListener('click',out2handler);
+    document.getElementById('out3').addEventListener('click',out3handler);
+    document.getElementById('out4').addEventListener('click',out4handler);
+
+</script>
+</body>
+</html>
