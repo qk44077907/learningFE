@@ -5,6 +5,7 @@ body {
 [class*=section] {
   text-align: center;
   position: relative;
+  padding: 0px 35px;
 }
 .u-arrow-bottom {
   position: absolute;
@@ -244,7 +245,7 @@ body {
   color: white;
 }
 .section6 {
-  background-color: lightblue;
+  background-color: #22C3AA;
 }
 .section6 .title {
   font-size: 70px;
@@ -255,13 +256,30 @@ body {
   width: 80%;
   font-weight: bold;
   background-color: #72BBD3;
+  background-color: #1AB394;
   font-size: 30px;
   margin: 0 auto;
   text-align: left;
   border-collapse: collapse;
-  /*.rowspan{
-      writing-mode: vertical-lr;
-    }*/
+}
+.section6 table td:last-child {
+  font-weight: normal;
+}
+.section6 table .rowspan {
+  color: white;
+  text-shadow: 1px 1px 1px #2D7891;
+}
+.section6 table .first {
+  text-align: center;
+  color: lightyellow;
+}
+.section6 table .second {
+  text-align: center;
+  color: darkred;
+}
+.section6 table .third {
+  text-align: center;
+  color: black;
 }
 .section6 table thead td {
   font-size: 40px;
