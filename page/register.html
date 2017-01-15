@@ -35,11 +35,10 @@
         });
         $('.submit').click(function () {
             $.ajax({
-                url: "/xxx", // 进行二次验证
+                url: "./register.php",
                 type: "post",
                 dataType: "json",
                 data: {
-                    // 二次验证所需的三个值
                     name: $('#name').val(),
                     tel: $('#tel').val()
                 },
@@ -55,10 +54,10 @@
 <body>
 <div id="fullpage">
     <div class="section register">
-        <div>如何称呼您：<input type="text" name="name" id="name">
+        <div>如何称呼您：<input type="text" name="name" class="name">
             <br>
             <br>
-            您的手机号：<input type="text" name="tel" id="tel">
+            您的手机号：<input type="text" name="tel" class="tel">
             <br>
             <br>
             <input type="button" value="提交" class="submit">

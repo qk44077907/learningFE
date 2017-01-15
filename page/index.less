@@ -9,8 +9,9 @@ body {
   padding: 0px 35px;
 }
 .u-arrow-bottom{
+  display: none;
   position: absolute;
-  transform: scale(2);
+  transform: scale(4);
   width: 24px;
   height: 14px;
   left: 50%;
@@ -64,52 +65,52 @@ body {
 
 @-webkit-keyframes start {
   0%,30% {
-    opacity: 0;
+    opacity: 0.5;
     -webkit-transform: translate(0,30px)
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate(0,100px)
+    -webkit-transform: translate(0,30px)
   }
 
   100% {
-    opacity: 0;
-    -webkit-transform: translate(0,-100px)
+    opacity: 0.5;
+    -webkit-transform: translate(0,-20px)
   }
 }
 
 @-moz-keyframes start {
   0%,30% {
-    opacity: 0;
+    opacity: 0.5;
     -moz-transform: translate(0,30px)
   }
 
   60% {
     opacity: 1;
-    -moz-transform: translate(0,100px)
+    -moz-transform: translate(0,30px)
   }
 
   100% {
-    opacity: 0;
-    -moz-transform: translate(0,-100px)
+    opacity: 0.5;
+    -moz-transform: translate(0,-20px)
   }
 }
 
 @keyframes start {
   0%,30% {
-    opacity: 0;
-    transform: translate(0,0px)
+    opacity: 0.5;
+    transform: translate(0,30px)
   }
 
   60% {
     opacity: 1;
-    transform: translate(0,-20px)
+    transform: translate(0,30px)
   }
 
   100% {
-    opacity: 0;
-    transform: translate(0,-30px)
+    opacity: 0.5;
+    transform: translate(0,-20px)
   }
 }
 
@@ -153,12 +154,10 @@ text-shadow: 7px 7px 1px #7BAABE;
   }
   .desc {
     text-align: left;
-    font-size: 40px;
-    font-weight: bold;
+font-size: 30px;
     text-indent: 2em;
   }
   .list {
-    width: 80%;
     text-align: left;
     font-size: 40px;
     font-weight: bold;
@@ -174,7 +173,7 @@ text-shadow: 7px 7px 1px #7BAABE;
     font-weight: bold;
     //color: white;
     font-size: 35px;
-    line-height: 2.5;
+    line-height: 1.5;
     span{
       font-size: 45px;
       color: white;
@@ -194,21 +193,18 @@ text-shadow: 7px 7px 1px #7BAABE;
   }
   .desc {
     text-align: left;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 30px;
     text-indent: 2em;
   }
   .list {
-    width: 80%;
     text-align: left;
     font-size: 40px;
     font-weight: bold;
     padding-top: 50px;
-    color: white;
     span{
       font-size: 50px;
       font-weight: bold;
-      color: red;
+      color: white;
     }
   }
   ul{
@@ -216,7 +212,7 @@ text-shadow: 7px 7px 1px #7BAABE;
     font-weight: bold;
     //color: white;
     font-size: 35px;
-    line-height: 2.5;
+    line-height: 2;
     span{
       color: red;
       font-size: 45px;
@@ -245,7 +241,6 @@ text-shadow: 7px 7px 1px #7BAABE;
     text-align: left;
     font-size: 70px;
     font-weight: bold;
-    padding-top: 50px;
     color: white;
   }
   ul{
@@ -253,7 +248,7 @@ text-shadow: 7px 7px 1px #7BAABE;
     font-weight: bold;
     color: black;
     font-size: 35px;
-    line-height: 2.5;
+    line-height: 2;
     span{
       font-size: 45px;
       color: white;
@@ -269,36 +264,38 @@ text-shadow: 7px 7px 1px #7BAABE;
   }
   table{
     //color: white;
-    width: 80%;
+    width: 40%;
     font-weight: bold;
     background-color: #72BBD3;
     background-color: #1AB394;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 auto;
     text-align: left;
     border-collapse: collapse;
     td:last-child{
+      font-size: 20px;
       font-weight: normal;
     }
     .rowspan{
-      color: white;
+      color: gold;
+      text-align: center;
       text-shadow: 1px 1px 1px #2D7891;
     }
     .first{
       text-align: center;
-      color: lightyellow;
+      color: white;
     }
     .second{
       text-align: center;
-      color: darkred;
+      color: white;
     }
     .third{
       text-align: center;
-      color: black;
+      color: white;
     }
     thead{
       td{
-        font-size: 40px;
+        font-size: 20px;
         text-align: center;
       }
     }
@@ -310,7 +307,7 @@ text-shadow: 7px 7px 1px #7BAABE;
 .section7{
   background-color: #1AB394;
   .title{
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     margin-bottom: 30px;
   }
@@ -323,49 +320,106 @@ text-shadow: 7px 7px 1px #7BAABE;
     font-family: "Microsoft YaHei";
     font-weight: bold;
     border-radius: 2px;
+    cursor:pointer;
   }
+
   .contact{
     margin-top: 40px;
     font-size: 45px;
+    span{
+      color: red;
+    }
+
   }
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
   background-color: #fff;
 }
 
-@media only screen and (min-device-width: 960px) {
+@media only screen and (max-device-width: 960px) {
+  div h1 h2 h3 span section ul li{
+    word-break: break-all;
+  }
   .section3 {
+    font-size: 30px;
     .desc{
       font-size: 30px;
       /*font-weight: normal;*/
+    }
+    .list{
+      width: 100%;
+      font-size: 40px;
     }
     ul{
       text-align: left;
       font-weight: bold;
       //color: white;
-      font-size: 30px;
+      font-size: 25px;
       line-height: 1.5;
       span{
-        font-size: 40px;
+        font-size: 35px;
         color: white;
       }
     }
   }
   .section4 {
-    .desc{
+    background-color: #2B2B2B;
+    color: white;
+    font-size: 30px;
+    .title {
+      text-align: center;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .desc {
+      text-align: left;
       font-size: 30px;
-      /*font-weight: normal;*/
+      text-indent: 2em;
+    }
+    .list {
+      text-align: left;
+      font-size: 35px;
+      font-weight: bold;
+      span{
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+      }
     }
     ul{
-      line-height: 2;
+      text-align: left;
+      font-weight: bold;
+      //color: white;
+      font-size: 35px;
+      line-height: 1.6;
+      span{
+        color: red;
+        font-size: 45px;
+      }
     }
   }
   .section5{
+    font-size: 35px;
     .list{
       padding-top: 0px;
     }
     ul{
+      font-size: 35px;
       line-height: 2;
     }
+  }
+  .section6{
+    table{
+      width: 80%;
+      font-size: 30px;
+      td:last-child{
+        font-size: 25px;
+        font-weight: normal;
+      }
+    }
+
+  }
+  .u-arrow-bottom{
+    display: block;
   }
 }

@@ -10,13 +10,16 @@ body .register {
   padding: 0 30px;
 }
 body .register input {
-  width: 60%;
   height: 30px;
   vertical-align: middle;
-  font-size: 30px;
+}
+body .register .name {
+  width: 60%;
+  font-size: 20px;
 }
 body .register .tel {
   width: 60%;
+  font-size: 20px;
 }
 body .register .submit {
   width: 120px;
@@ -28,4 +31,10 @@ body .register .submit {
   background-color: lightblue;
   border: none;
   line-height: 40px;
+}
+@media only screen and (min-device-width: 960px) {
+  body .register .name,
+  body .register .tel {
+    width: 200px;
+  }
 }
