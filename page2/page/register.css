@@ -32,6 +32,9 @@ body .register .submit {
   border: none;
   line-height: 40px;
 }
+body .register h1 {
+  font-size: 20px;
+}
 @media only screen and (min-device-width: 960px) {
   body .register .name,
   body .register .tel {
