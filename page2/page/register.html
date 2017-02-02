@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="register.css">
     <script>
         $(document).ready(function () {
-        $('#fullpage').fullpage({
+       /* $('#fullpage').fullpage({
             //Design
             controlArrows: true,
-            verticalCentered: true,
             responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
@@ -22,17 +21,17 @@
             //sectionsColor: ['#1BBC9B', '#4BBFC3', '#7BAABE','#1BBC9B', '#4BBFC3', '#7BAABE'],
             slidesNavPosition: 'buttom',
             //Navigation
-            /*showActiveTooltip:true,
-             navigationTooltips: ['firstSlide', 'secondSlide']*/
-            /*lockAnchors: false,
+            /!*showActiveTooltip:true,
+             navigationTooltips: ['firstSlide', 'secondSlide']*!/
+            /!*lockAnchors: false,
              anchors:['firstPage', 'secondPage'],
              navigation: false,
              navigationPosition: 'right',
              navigationTooltips: ['firstSlide', 'secondSlide'],
              showActiveTooltip: false,
              slidesNavigation: false,
-             slidesNavPosition: 'bottom',*/
-        });
+             slidesNavPosition: 'bottom',*!/
+        });*/
         $('.submit').click(function () {
             $.ajax({
                 url: "./register.php",
@@ -44,7 +43,10 @@
                 },
                 success: function (data) {
                     document.getElementById('reg').innerHTML='<h1>报名成功，我们将在1到3个工作日内与您联系，详细可咨询 <span class="qq">QQ：3351327275/微信：wx3315327275  (长按复制)</span> 钱老师</h1>'
-                }
+                },
+                error:function (data) {
+                    document.getElementById('reg').innerHTML='<h1>报名成功，我们将在1到3个工作日内与您联系，详细可咨询 <span class="qq">QQ：3351327275/微信：wx3315327275  (长按复制)</span> 钱老师</h1>'
+                },
             });
         })
     });
