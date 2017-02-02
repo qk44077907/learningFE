@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="./jquery.fullpage.min.css">
-    <script src="./jquery.1.11.0.js"></script>
-    <script src="./jquery.fullPage.min.js"></script>
-    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="jquery.fullpage.min.css">
+    <script src="jquery.1.11.0.js"></script>
+    <script src="jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="register.css">
     <script>
         $(document).ready(function () {
         $('#fullpage').fullpage({
@@ -43,7 +43,7 @@
                     tel: $('#tel').val()
                 },
                 success: function (data) {
-                    window.location.href="./success.html"
+                    document.getElementById('reg').innerHTML='<h1>报名成功，我们将在1到3个工作日内与您联系，详细可咨询 <span class="qq">QQ：3351327275/微信：wx3315327275  (长按复制)</span> 钱老师</h1>'
                 }
             });
         })
@@ -53,7 +53,7 @@
 </head>
 <body>
 <div id="fullpage">
-    <div class="section register">
+    <div class="section register" id="reg">
         <div>如何称呼您：<input type="text" name="name" class="name">
             <br>
             <br>
