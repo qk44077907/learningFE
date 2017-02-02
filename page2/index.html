@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"  />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no">
+    <meta content="email=no" name="format-detection" />
+    <title> 第5期来啦！！！年薪60万前端工程师带你飞，前端开发零基础特训营，从零基础到职业的脱变 - 天天向上大课堂</title>
+    <meta name="description" content="天天向上 x 奈思设计，前端开发零基础特训营，从零基础到职业的脱变">
+    <meta name="keywords" content="前端开发,零基础,品牌，特训营，实战，职业，脱变，培训，辅导，天天向上，天天向上大课堂，在线课程">
+    <script>
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+        if( isMobile.any() ) {
+            window.location.href="./indexM.html"
+        }else{
+
+        }
+    </script>
+    <style type="text/css">
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe{ margin:0; padding:0; border:0;  font-family:"Microsoft YaHei";}
+        html{ -webkit-text-size-adjust:none;}
+        body{ font-size:12px; line-height:22px; background:#fff;  -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased;  font-smoothing: antialiased;  color:#333;}
+        input,textarea{ resize:none; font-family:"Microsoft YaHei"; -moz-appearance: none;-webkit-appearance: none;appearance: none;border-radius: 0;background: #fff;border: 0}
+        img{ border:none;vertical-align:middle; -ms-interpolation-mode: bicubic; max-width:100%;}
+        ul,li{ list-style:none;}
+        a{ text-decoration:none; color:#333; outline:none; }
+        a:hover{ color:#063b96;}
+        input:focus,textarea:focus{ outline:none; }
+        h1,h2,h3{  font-weight:normal;}
+        ::selection{ background:none; color:#333;}
+        ::-moz-selection{ background:none; color:#333;}
+        ::-webkit-selection{ background:none; color:#333;}
+
+        @font-face {
+        [font-family: <family-name>;]? [src: [ <uri> [format(<string>#)]? | <font-face-name> ]#;]? [unicode-range: <urange>#;]? [font-variant: <font-variant>;]? [font-feature-settings: normal|<feature-tag-value>#;]? [font-stretch: <font-stretch>;]? [font-weight: <weight>]; [font-style: <style>];
+        }
+
+
+        em,i{ font-style:normal;}
+        .or{ overflow:hidden;}
+        .fl{ float:left;}
+        .fr{ float:right;}
+
+
+        h1,h2,h3,h4,h5{ font-weight:normal;}
+
+
+        .foot{ text-align:center; font-size:14px; line-height:200px; color:#666;}
+
+        .box{ width:1200px; margin:0 auto; position:relative;}
+        .index_bg{ position:relative; }
+        .index_bg.f1{ background:url(static/bg1.png) no-repeat center top; background-size:cover; height:750px; width:100%;}
+        .index_bg.f1 .jz{ width:1200px; margin:0 auto; text-align:center; left:50%; margin-left:-600px; position:absolute;  bottom:0;}
+
+        .kecheng{ width:1200px; margin:0 auto; text-align:center; padding:80px 0; }
+        .kecheng .top h1{ font-size:42px; line-height:50px; }
+        .kecheng .top h3{ font-size:20px; line-height:30px; margin-top:10px; }
+        .kecheng .con{ width:100%; margin-top:30px;}
+        .kecheng .con dl{ width:255px; float:left; font-size:14px; margin:27px 70px; line-height:26px; color:#666;}
+        .kecheng .con dl h1{ font-size:22px; margin:20px auto 10px auto; color:#333; }
+
+        .index_bg.f2{ background:url(static/longge.png) no-repeat center top; background-size:cover; height:783px; width:100%; overflow:hidden; clear:both;}
+        .index_bg.f2 .con{ width:1200px; margin:0 auto; position:relative; height:100%;}
+        .index_bg.f2 .pic{ width:485px; position:absolute; left:40px; bottom:0;}
+        .index_bg.f2 .fr{ width:490px; margin-top:120px;}
+        .index_bg.f2 .fr ul{ width:100%; line-height:30px; font-size:14px; color:#666; margin-top:30px;}
+        .index_bg.f2 .fr ul h1{ font-size:42px; line-height:50px; margin-bottom:10px;}
+        .index_bg.f2 .fr ul h1 strong{ color:#4b3f7b;}
+        .index_bg.f2 .fr ul h3{ font-size:20px; line-height:30px; font-weight:bold; margin-bottom:5px;}
+        .index_bg.f2 .fr ul a{ width:210px; line-height:62px; background:#f83508; -webkit-border-radius:4px; border-radius:4px; color:#fff; font-weight:bold; display:block; font-size:24px; text-align:center; margin-top:30px;}
+        .index_bg.f2 .fr ul a:hover{ background:#d32800;}
+
+        .quxian{ width:1100px; margin:0 auto;}
+        .quxian .top{ position:relative; margin-top:130px; text-align:center;}
+        .quxian .top ul{ font-size:16px; line-height:40px; position:absolute; left:20px; top:0; }
+        .quxian .top ul h1{ font-size:42px; line-height:50px; margin-bottom:20px;}
+        .quxian .top ul li i{ background:url(static/yuan.png) no-repeat; width:14px; height:14px; display:inline-block; margin-right:8px;}
+        .quxian .bottom{ width:999px; margin:0 auto; clear:both; margin-top:30px;}
+        .quxian .bottom .list{ width:333px; float:left; height:570px; overflow:hidden;}
+        .quxian .bottom .list ul{ width:280px; margin:20px auto; font-size:12px; line-height:22px; color:#fff;}
+        .quxian .bottom .list.r1{ background:#84c893;}
+        .quxian .bottom .list.r2{ background:#5fb672;}
+        .quxian .bottom .list.r3{ background:#34a962;}
+        .quxian .bottom .list ul h1{ font-size:16px;}
+
+        .index_bg_top{ font-size:42px; line-height:50px; text-align:center; margin:100px auto 50px auto; }
+        .index_bg.f3{ background:url(static/line.png) repeat-y center top; width:100%; overflow:hidden;}
+        .index_bg.f3 .con{ width:890px; margin:0 auto; position:relative; padding:20px 0 70px 0;}
+        .index_bg.f3 .con .vs{ background:url(static/vs.png) no-repeat; width:96px; height:96px; position:absolute; top:0; left:50%; top:50%; margin:-48px 0 0 -48px;}
+
+        .index_bg.f3 .fl{ color:#fff2a9; font-size:18px; }
+        .index_bg.f3 .fl li{ margin-top:50px;}
+        .index_bg.f3 .fl li h1{ font-size:26px; line-height:30px;}
+
+        .index_bg.f3 .fr{ color:#fff; font-size:18px; }
+        .index_bg.f3 .fr li{ margin-top:50px; text-decoration:line-through;}
+        .index_bg.f3 .fr li.d{ text-decoration:none;}
+        .index_bg.f3 .fr li h1{ font-size:26px; line-height:30px;}
+
+
+        .xuexi{ background:#f7f7f3; width:100%; text-align:center; padding:70px 0;}
+        .xuexi .top h1{ font-size:42px; line-height:50px; }
+        .xuexi .top h3{ font-size:20px; line-height:30px; margin-top:10px; }
+        .xuexi .bottom{ font-size:18px; line-height:50px; width:100%; margin-top:70px;}
+        .xuexi .bottom p a{ color:#f83508;}
+        .xuexi .bottom p a:hover{ text-decoration:underline; }
+        .xuexi .bottom p a.bt{ width:210px; line-height:62px; background:#f83508; -webkit-border-radius:4px; border-radius:4px; color:#fff; font-weight:bold; display:inline-block; font-size:24px; text-align:center; margin-top:30px;}
+        .xuexi .bottom p a.bt:hover{ background:#d32800; text-decoration:none;}
+
+        @media screen and (max-width:1230px){
+            .box{ width:100%; }
+            .quxian{ width:100%; }
+            .index_bg.f1{ height:680px; }
+            .index_bg.f1 .jz{ width:1000px; left:50%; margin-left:-500px; }
+
+            .kecheng{ width:100%; margin:0 auto; text-align:center; padding:40px 0; }
+            .kecheng .con dl{ width:30%; margin:20px 1.5%;}
+
+            .index_bg.f2 .con{ width:100%;}
+            .index_bg.f2 .pic{ width:420px;}
+
+        }
+        @media screen and (max-width:1032px){
+            .index_bg.f1{ height:600px; }
+            .index_bg.f1 .jz{ width:100%; margin-left:-50%;}
+
+            .index_bg.f2 .fr ul h1{ font-size:28px; line-height:30px; }
+            .index_bg.f2 .fr ul h1 strong{ color:#4b3f7b;}
+            .index_bg.f2 .fr ul h3{ font-size:16px; line-height:30px;  }
+            .index_bg.f2{ height:680px;}
+            .index_bg.f2 .pic{ width:320px;}
+            .index_bg.f2 .fr{ width:410px; margin-top:60px;}
+
+            .quxian .top{ width:90%; margin:40px auto;}
+            .quxian .top ul h1{ font-size:18px; line-height:30px; margin-bottom:10px;}
+            .quxian .top ul{ font-size:14px; line-height:30px;}
+
+            .quxian .bottom{ width:90%; margin:0 auto; clear:both; margin-top:30px;}
+            .quxian .bottom .list{ width:100%; float:none; height:auto; padding:20px 0;}
+
+            .index_bg_top{ margin:30px auto 20px auto; }
+            .index_bg.f3{ background:#4b3f7b; width:100%; overflow:hidden;}
+            .index_bg.f3 .con{ width:90%; margin:0 auto; position:relative; padding:20px 0 70px 0;}
+
+            .index_bg.f3 .fl{ width:90%; margin:0 auto;  text-align:center; color:#fff2a9; font-size:14px; float:none; padding-bottom:50px; }
+            .index_bg.f3 .fl li{ margin-top:10px;}
+            .index_bg.f3 .fl li h1{ font-size:26px; line-height:30px;}
+
+            .index_bg.f3 .fr{ width:90%; margin:0 auto; text-align:center; color:#fff; font-size:14px; float:none; margin-top:100px; }
+            .index_bg.f3 .fr li{ margin-top:10px; text-decoration:line-through;}
+            .index_bg.f3 .fr li.d{ text-decoration:none;}
+            .index_bg.f3 .fr li h1{ font-size:20px; line-height:30px;}
+
+        }
+
+
+        @media screen and (max-width:760px){
+            .index_bg.f1{ height:500px;}
+            .index_bg_top{ font-size:32px;line-height:40px; }
+            .kecheng .top h1{ font-size:32px; line-height:40px; }
+            .kecheng .top h3{ font-size:16px; line-height:25px;  }
+            .kecheng .con dl{ width:90%; margin:10px auto; float:none;}
+            .kecheng .con dl h1{ font-size:16px; margin:5px auto; }
+
+            .index_bg.f2 .pic{ width:300px; position:inherit; left:0; margin:0 auto;  }
+            .index_bg.f2 .fr{ width:90%;  margin:0 auto; margin-top:30px; float:none;}
+            .index_bg.f2 .fr ul h1{ font-size:20px; line-height:24px; }
+            .index_bg.f2 .fr ul h1 strong{ color:#4b3f7b;}
+            .index_bg.f2 .fr ul h3{ font-size:16px; line-height:25px;  }
+            .index_bg.f2{ height:auto; padding:30px 0;}
+            .index_bg.f2 .fr ul a{ width:100%; font-size:16px; line-height:50px;}
+
+            .quxian .top ul{ position:inherit;}
+
+            .xuexi .top h1{ font-size:32px; line-height:40px; }
+            .xuexi .top h3{ font-size:16px; line-height:25px;  }
+
+        }
+
+
+        @media screen and (max-width:470px){
+            .index_bg.f1{ height:300px;}
+            .index_bg.f1 .jz{ width:120%; margin-left:-60%;}
+            .index_bg_top{ font-size:20px;line-height:30px; }
+            .kecheng .top h1{ font-size:20px; line-height:30px; }
+            .kecheng .top h3{ font-size:14px; line-height:24px;  }
+            .xuexi .top h1{ font-size:20px; line-height:30px; }
+            .xuexi .top h3{ font-size:14px; line-height:24px;  }
+            .xuexi .bottom{ font-size:16px; line-height:30px; margin-top:30px;}
+            .xuexi .bottom p a{ color:#f83508;}
+            .xuexi .bottom p a:hover{ text-decoration:underline; }
+            .xuexi .bottom p a.bt{ width:90%;  }
+            .foot{   line-height:100px; color:#666;}
+
+        }
+
+        @media screen and (max-width:400px){
+            .index_bg.f1{ height:240px; }
+
+
+        }
+        #leftsead{width:131px;height:143px;position:fixed;top:258px;right:0px; z-index: 150;}
+        *html #leftsead{margin-top:258px;position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+        #leftsead li{width:131px;height:60px; list-style: none;}
+        #leftsead li img{float:right; width: 100%;}
+        #leftsead li a{height:49px;float:right;display:block;min-width:47px;max-width:131px;}
+        #leftsead li a .shows{display:block;}
+        #leftsead li a .hides{margin-right:-145px;cursor:pointer;cursor:hand;}
+        #leftsead li a.youhui .hides{display:none;position:absolute;right:190px;top:2px;}
+        .registration-con{
+            margin: 0 auto;
+            padding: 30px 0;
+            padding-left: 3%;
+            /*width: 103%;  */
+            text-align: center;
+        }
+        /*.registration-con*/
+        .registration-con li{
+            display: inline-block;
+            overflow: hidden;
+            width: 30%;
+            height: 120px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        .re-step{
+            width: 100%;
+            height: 100px;
+        }
+        .re-step td{
+            vertical-align:middle;
+            height: 120px;
+        }
+        .re-step td.re-step-dt{
+            width: 110px;
+
+        }
+        .re-step-dd{
+            color: #999;
+            font-size: 18px;
+        }
+        .re-step-2 .re-step-dd{
+            font-size: 14px;
+        }
+        .re-step-dt p{
+            padding-top: 16px;
+            width: 96px;
+            height: 80px;
+            border-radius: 50%;
+            /*border: 2px solid #aaa;*/
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            background: #f83508;
+            color: #fff;
+            /*display:table-cell; */
+
+        }
+        .registration-con li .att-text{
+            color: #f83508;
+            font-weight: bold;
+        }
+        .registration-con li span{
+            /*display: inline-block;*/
+            width: 110px;
+            padding: 2px 0;
+            margin-right: 10px;
+            border-radius: 5px;
+            /*background: #ffca08;*/
+            color: #000;
+            text-align: center;
+        }
+        .m-con{
+            width: 1200px;
+            margin:  0 auto;
+        }
+    </style>
+    <link rel="stylesheet" href="static/animate.css">
+    <script type="text/javascript" src="./font/js/lib/jquery-1.9.0.min.js"></script>
+    <!-- <script type="text/javascript" src="static/common.js"></script> -->
+    <script src="static/wow.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset:50
+            }
+        );
+        wow.init();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7aeefdb15fe9aede961eee611c7e48a5";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+<div class="index_bg f1 or">
+
+    <div class="wow fadeInUp jz"><img src="static/top_img.png" ></div>
+
+</div>
+<!--index_f1-->
+
+
+<div class="kecheng or">
+    <div class="wow fadeInDown top" data-wow-delay="0s">
+        <h1>六大课程优势超越你的期待</h1>
+        <h3>天天向上重磅推荐课程带你飞，坚持两个月你将蜕变</h3>
+    </div>
+    <!--top-->
+
+    <div class="con or wow fadeInLeft">
+
+        <dl>
+            <dd><img src="static/kecheng_06.jpg"></dd>
+            <dt><h1>零基础无障碍</h1></dt>
+            <dt>真正适合零基础学员</dt>
+            <dt>所有学员均可无障碍学习</dt>
+        </dl>
+
+        <dl>
+            <dd><img src="static/kecheng_08.jpg"></dd>
+            <dt><h1>企业级项目实战</h1></dt>
+            <dt>课程内容紧跟市场，结合实战</dt>
+            <dt>实战内容均来源于企业项目</dt>
+        </dl>
+
+
+        <dl>
+            <dd><img src="static/kecheng_10.jpg"></dd>
+            <dt><h1>课程系统全面</h1></dt>
+            <dt>系统化教学，自成体系</dt>
+            <dt>全面覆盖前端的知识点</dt>
+        </dl>
+
+        <dl>
+            <dd><img src="static/kecheng_16.jpg"></dd>
+            <dt><h1>上课无区域限制</h1></dt>
+            <dt>不限区域，有电脑即可上课</dt>
+            <dt>课后分享课程视频，随时都可畅快学习</dt>
+        </dl>
+
+        <dl>
+            <dd><img src="static/kecheng_18.jpg"></dd>
+            <dt><h1>无水分的学费</h1></dt>
+            <dt>费用远低于培训机构</dt>
+            <dt>内容更优质，费用更合理</dt>
+        </dl>
+
+
+        <dl>
+            <dd><img src="static/kecheng_19.jpg"></dd>
+            <dt><h1>学习服务天天向上保障</h1></dt>
+            <dt>讲师承诺终身辅导</dt>
+            <dt>天天向上全程保障课程顺利进行</dt>
+        </dl>
+
+    </div>
+    <!--con-->
+</div>
+
+
+
+<div class="index_bg f2 or">
+
+    <div class="con">
+
+        <div class="wow fadeInLeft pic" data-wow-delay="0s"><img src="static/man.png"></div>
+        <!--fadeInUpLeft-->
+        <div class="wow fadeInRight fr" data-wow-delay="0s">
+            <ul>
+                <li><h1>讲师简介<strong>龙哥</strong></h1></li>
+                <li><h3>资深前端工程师、奈思设计联合创始人</h3></li>
+                <li>8年前端开发经验，2007年踏入前端工作</li>
+                <li>主持商业前端开发项目约300余个</li>
+                <li>2011年加入奈思设计任联合创始人</li>
+                <li>资深前端开发工程师，主导团队所有前端开发工作</li>
+                <li>服务客户包括：中国移动、百度、腾讯、宇信易诚等…</li>
+            </ul>
+
+            <ul>
+                <li><h1>授课方式</h1></li>
+                <li><b>授课时间：</b><span style="color: #f83508;">2016年 11月11日 开课</span> （每周一、三、五晚8:30-10点，持续7周）</li>
+                <li><b>讲课模式：</b><span style="color: #f83508;">YY教育频道在线 直播互动授课</span>（当次课程视频会分享给每位学员）</li>
+                <li><b>学员要求：</b><span style="color: #f83508;">有一定计算机基础，了解前端工作内容</span></li>
+                <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2962768582&site=qq&menu=yes" target="_blank"class="bt">我要报名</a></li>
+            </ul>
+
+        </div>
+        <!--dh-->
+
+    </div>
+
+</div>
+<!--index_f2-->
+
+
+<div class="quxian or">
+    <div class="top wow fadeInDown">
+
+        <ul>
+            <li><h1>完美的课程曲线成就你</h1></li>
+            <li><i></i>寻道有论：学习是学习学习的方法</li>
+            <li><i></i>理论学习+实战训练让课程不再枯燥</li>
+            <li><i></i>循序渐进的课程设置亲身为你打造</li>
+            <li><i></i>导师以8年切身经验亲身传道授业</li>
+            <li><i></i>3大阶段带你进入职业前端开发之路</li>
+        </ul>
+        <img src="static/quxian_03.png">
+    </div>
+    <!--top-->
+
+    <div class="bottom wow fadeInUp">
+
+        <div class="list r1">
+
+            <ul>
+                <li><h1>第1章 HTML基础（3个课时）</h1></li>
+                <li>1、HTML语言介绍</li>
+                <li>2、HTML运行的环境</li>
+                <li>3、怎么创建网页</li>
+                <li>4、浏览器的支持</li>
+                <li>5、常用的HTML标签</li>
+                <li>6、dw的使用</li>
+            </ul>
+
+            <ul>
+                <li><h1>第2章 表格表单与框架（2个课时）</h1></li>
+                <li>1、table表格技术布局页面</li>
+                <li>2、table在div布局中哪些模块更好的使用</li>
+                <li>3、系统后台所用到的frameset框架</li>
+                <li>4、iframe的使用</li>
+                <li>5、Form表单详细讲解</li>
+            </ul>
+
+            <ul>
+                <li><h1>第3章 CSS基础（4个课时）</h1></li>
+                <li>1、CSS盒型基础概念</li>
+                <li>2、CSS选择符的使用</li>
+                <li>3、CSS常用属性</li>
+                <li>4、详解CSS定位与DIV布局</li>
+                <li>5、DIV、CSS实际项目综合练习讲解</li>
+                <li>6、CSS不合理写法演示和常见问题归纳</li>
+                <li>7、CSS的调试以及调试工具使用</li>
+                <li>8、应用实际项目做综合练习</li>
+            </ul>
+
+        </div>
+        <!--list-->
+        <div class="list r2">
+
+
+            <ul>
+                <li><h1>第4章 HTML5（2个课时）</h1></li>
+                <li>1、HTML5介绍</li>
+                <li>2、HTML5语义化标签讲解</li>
+                <li>3、HTML5标签的使用</li>
+                <li>4、HTML5音频以及视频标签的讲解以及应用</li>
+                <li>5、雪碧CSS切法、常见问题归纳和练习</li>
+            </ul>
+
+            <ul>
+                <li><h1>第5章 CSS3（3个课时）</h1></li>
+                <li>1、css3介绍</li>
+                <li>2、css3属性讲解以及应用</li>
+                <li>3、css3过渡以及动画属性详细讲解</li>
+                <li>4、结合html5综合练习</li>
+                <li>5、电商网站切图练习</li>
+            </ul>
+
+            <ul>
+                <li><h1>第6章 JavaScript技术以及Jquery（2个课时）</h1></li>
+                <li>1、JavaScript概述介绍</li>
+                <li>2、JavaScript语法</li>
+                <li>3、JavaScript典型案例</li>
+                <li>4、Jquery的概念</li>
+                <li>5、Jquery语法</li>
+                <li>6、JavaScript典型案例</li>
+                <li>7、综合案例练习</li>
+            </ul>
+
+
+
+
+
+        </div>
+        <!--list-->
+        <div class="list r3">
+
+            <ul>
+                <li><h1>第7章 web响应式写法（1个课时）</h1></li>
+                <li>1、响应式的原理</li>
+                <li>2、响应式的前端制作</li>
+                <li>3、响应式的测试</li>
+                <li>4、响应式前端问题归纳与练习</li>
+
+            </ul>
+
+            <ul>
+                <li><h1>第8章 移动端的写法（1个课时）</h1></li>
+                <li>1、移动端的前端原理</li>
+                <li>2、移动端的前端制作</li>
+                <li>3、如何做好移动端适配</li>
+                <li>4、移动端前端练习</li>
+            </ul>
+
+            <ul>
+                <li><h1>第9章 综合练习（2个课时）</h1></li>
+                <li>1、制作小型网站</li>
+                <li>2、制作主流网站</li>
+                <li>3、电商购物网站主页</li>
+                <li>4、移动端web app前端制作</li>
+            </ul>
+
+            <ul>
+                <li><h1>第10章 面试培训和简历写法</h1></li>
+                <li>1、面试常见问题</li>
+                <li>2、简历写法</li>
+                <li>3、职业答疑</li>
+            </ul>
+
+        </div>
+        <!--list-->
+    </div>
+
+    <!--bottom-->
+</div>
+<!--quxian-->
+<h1 class="index_bg_top">为什么选择天天向上WEB前端特训营</h1>
+<div class="index_bg f3 or">
+
+    <div class="con box or">
+        <div class="vs"></div>
+        <div class="wow fadeInLeft fl" data-wow-delay="0s">
+            <ul>
+                <li><h1>天天向上前端特训营</h1></li>
+                <li>学费只有线下1/6，更无其他额外费用</li>
+                <li>小班一对一，名师答疑辅导实战学习</li>
+                <li>无地域限制，线上分享北京导师资源</li>
+                <li>理论与实战、针对指导一个都不能少</li>
+                <li>讲师实战工作8年，传授企业所需经验</li>
+            </ul>
+
+        </div>
+        <!--txt-->
+        <div class="wow fadeInRight fr" data-wow-delay="0s">
+
+            <ul>
+                <li class="d"><h1>其他培训机构</h1></li>
+                <li>1.5万-3万高额学费及各种额外费用</li>
+                <li>大班填鸭式教学，无法照顾基础学生</li>
+                <li>线下教学，需要住宿和舟车劳顿奔波</li>
+                <li>快速结课只教皮毛，理论与实战脱节</li>
+                <li>教师资源良莠不齐，缺失企业级讲师</li>
+            </ul>
+
+        </div>
+        <!--dh-->
+
+    </div>
+
+</div>
+<!--index_f3-->
+
+
+<div class="kecheng or">
+    <div class="wow fadeInDown top" data-wow-delay="0s">
+        <h1>前端工程师，互联网新贵职业你造吗？</h1>
+        <h3>移动互联网的爆发，前端工程师高薪也一将难求</h3>
+    </div>
+    <!--top-->
+
+    <div class="con or wow fadeInLeft">
+
+
+
+        <dl>
+            <dd><img src="static/zao_13.jpg"></dd>
+            <dt><h1>高薪等你</h1></dt>
+            <dt>前端工程师的薪水逐年递增</dt>
+            <dt>只要能力符合要求就不愁工作</dt>
+        </dl>
+        <dl>
+            <dd><img src="static/kecheng_06.jpg" width="158" height="158"></dd>
+            <dt><h1>人才需求量大</h1></dt>
+            <dt>随处可见企业在招聘前端</dt>
+            <dt>优质前端更是稀缺人才</dt>
+        </dl>
+
+        <dl>
+            <dd><img src="static/zao_17.jpg"></dd>
+            <dt><h1>良好职业发展路线</h1></dt>
+            <dt>前端是后端和设计师沟通的桥梁</dt>
+            <dt>前端工程师是越来越重要的一环</dt>
+        </dl>
+
+
+    </div>
+    <!--con-->
+</div>
+
+
+
+<div class="xuexi or">
+
+    <div class="wow fadeInDown top" data-wow-delay="0s">
+        <h1>与其临渊慕鱼，不如立即加入学习</h1>
+        <h3>进步往往就在不经意间，或许就是你的一个决定</h3>
+    </div>
+    <!--top-->
+
+    <div class="bottom">
+        <div class="m-con">
+            <ul class="registration-con">
+                <li class="in-b">
+                    <table class="re-step">
+                        <tbody><tr>
+                            <td class="re-step-dt">
+                                <p>选购<br>课程</p>
+                            </td>
+                            <td class="re-step-dd">
+                                天天向上官方淘宝店交易<br>
+                                <a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w5003-13947418888.5.UWBEZV&id=529823204503" title="戳链接直达" class="att-text" target="_blank">戳链接直达&gt;&gt;</a>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </li>
+                <li class="in-b">
+                    <table class="re-step re-step-2">
+                        <tbody><tr>
+                            <td class="re-step-dt">
+                                <p>加入<br>会员</p>
+                            </td>
+                            <td class="re-step-dd ">
+                                购买课程后<br>
+                                加入会员QQ群：<span class="att-text">576902321</span><br>
+                                验证时请务必填写<br>
+                                <span class="att-text">【淘宝id+真实姓名+手机号】</span>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </li>
+                <li class="in-b">
+                    <table class="re-step">
+                        <tbody><tr>
+                            <td class="re-step-dt">
+                                <p>等候<br>开课</p>
+                            </td>
+                            <td class="re-step-dd">
+                                进群即表示完成报名<br>
+                                在群里静候开课即可
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </li>
+            </ul>
+        </div>
+        <p><a href="http://wpa.qq.com/msgrd?v=3&uin=2962768582&site=qq&menu=yes" target="_blank" class="bt">我要报名</a></p>
+    </div>
+
+</div>
+<!--xuexi-->
+<!--<div id="leftsead" style="display: block;">
+    <ul>
+        <li>
+            <a class="join-box" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2962768582&site=qq&menu=yes">
+                &lt;!&ndash; <img src="http://7xkxpo.com1.z0.glb.clouddn.com/qq-want.png" alt="报名咨询" class="hides"> &ndash;&gt;
+                <img src="http://7xkxpo.com1.z0.glb.clouddn.com/qq-want.png" alt="报名咨询" id="sayQQ" class="shows">
+            </a>
+        </li>
+    </ul>
+</div>-->
+</body>
+
+</html>
