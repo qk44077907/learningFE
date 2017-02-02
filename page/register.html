@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./jquery.fullpage.min.css">
+    <script src="./jquery.1.11.0.js"></script>
+    <script src="./jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="./register.css">
+    <script>
+        $(document).ready(function () {
+        $('#fullpage').fullpage({
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+            keyboardScrolling: true,
+            //animateAnchor: true,
+            recordHistory: true,
+            //sectionsColor: ['#1BBC9B', '#4BBFC3', '#7BAABE','#1BBC9B', '#4BBFC3', '#7BAABE'],
+            slidesNavPosition: 'buttom',
+            //Navigation
+            /*showActiveTooltip:true,
+             navigationTooltips: ['firstSlide', 'secondSlide']*/
+            /*lockAnchors: false,
+             anchors:['firstPage', 'secondPage'],
+             navigation: false,
+             navigationPosition: 'right',
+             navigationTooltips: ['firstSlide', 'secondSlide'],
+             showActiveTooltip: false,
+             slidesNavigation: false,
+             slidesNavPosition: 'bottom',*/
+        });
+        $('.submit').click(function () {
+            $.ajax({
+                url: "./register.php",
+                type: "post",
+                dataType: "json",
+                data: {
+                    name: $('#name').val(),
+                    tel: $('#tel').val()
+                },
+                success: function (data) {
+                    window.location.href="./success.html"
+                }
+            });
+        })
+    });
+    </script>
+    <title>报名页面</title>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section register">
+        <div>如何称呼您：<input type="text" name="name" class="name">
+            <br>
+            <br>
+            您的手机号：<input type="text" name="tel" class="tel">
+            <br>
+            <br>
+            <input type="button" value="提交" class="submit">
+        </div>
+    </div>
+</div>
+</body>
+</html>
